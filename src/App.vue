@@ -12,10 +12,10 @@ export default defineComponent({
   name: 'App',
   data() {
     return {
-      locale: zhCN
-    };
+      locale: zhCN,
+    }
   },
-});
+})
 </script>
 
 <style lang="stylus">
