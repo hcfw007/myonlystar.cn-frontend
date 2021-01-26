@@ -18,7 +18,6 @@ module.exports = {
   'plugins': [
     'vue',
     '@typescript-eslint',
-    'html',
   ],
   'rules': {
     'indent': [
