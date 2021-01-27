@@ -1,0 +1,6 @@
+#main.light
+  --main-background: #F2D7EE
+  --sub-background: #D3BCC0
+  --faint-color: #A5668B
+  --sub-color: #69306D
+  --main-color: #0E103D
