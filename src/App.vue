@@ -1,7 +1,6 @@
 <template>
   <a-config-provider :locale="locale">
     <router-view
-      id="main"
       class="light"
     />
   </a-config-provider>
