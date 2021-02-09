@@ -19,11 +19,13 @@
   "homepage": "https://github.com/hcfw007/myonlystar.cn-frontend#readme",
   "dependencies": {
     "ant-design-vue": "^2.0.0-rc.9",
+    "axios": "^0.24.0",
     "moment": "^2.29.1",
     "vue": "^3.0.5",
     "vue-router": "^4.0.3"
   },
   "devDependencies": {
+    "@types/node": "^17.0.6",
     "@typescript-eslint/eslint-plugin": "^4.14.1",
     "@typescript-eslint/parser": "^4.14.1",
     "@vitejs/plugin-vue": "^1.1.2",
