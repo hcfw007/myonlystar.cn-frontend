@@ -5,7 +5,7 @@
         <a-col :span="12">
           <div class="website-title-block">
             <span class="website-title">MyOnlyStar.CN</span>
-            <span class="website-subtitle">想到啥做啥 请勿抱有太多期待</span>
+            <span class="website-subtitle">一个普通的程序员</span>
           </div>
         </a-col>
         <a-col :span="12">
