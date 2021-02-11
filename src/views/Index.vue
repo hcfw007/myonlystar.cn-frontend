@@ -6,7 +6,19 @@
     <a-layout-content>
       <a-row>
         <a-col :span="24">
-          现在还空空如也
+          <h1>个人简介</h1>
+        </a-col>
+      </a-row>
+      <a-row>
+        <a-col :span="24">
+          <p>一夕匕，月半，了一。</p>
+          <p>一个普通的程序员，来自江苏，南京。</p>
+          <p>爱好：游戏，足球，编程。</p>
+          <p>擅长：写bug，看美剧。</p>
+          <p>大部分事情无所谓，小部分事情认死理。</p>
+          <p>生活方式可能与常人不同，虽然自己并不那么认为，但不太喜欢别人指指点点。</p>
+          <p>爱情长跑11年，做好了跑一辈子的打算。</p>
+          <p>丑照：不给看。</p>
         </a-col>
       </a-row>
     </a-layout-content>
@@ -38,4 +50,6 @@ header.ant-layout-header
 main.ant-layout-content
   background-color: var(--main-background)
   color: var(--main-color)
+  padding: 50px
+
 </style>
