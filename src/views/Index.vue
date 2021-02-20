@@ -21,6 +21,22 @@
           <p>丑照：不给看。</p>
         </a-col>
       </a-row>
+      <a-row>
+        <a-col :span="24">
+          <h1>近期博文</h1>
+        </a-col>
+      </a-row>
+      <a-row>
+        <a-col :span="24">
+          <a-list-item>
+            <a-list-item-meta>
+              <template #title>
+                <a href="https://www.antdv.com/">test</a>
+              </template>
+            </a-list-item-meta>
+          </a-list-item>
+        </a-col>
+      </a-row>
     </a-layout-content>
     <a-layout-footer>
       <Feet />
@@ -31,6 +47,7 @@
 <script lang="ts">
 import Navbar from '../components/Navbar.vue'
 import Feet from '../components/Feet.vue'
+import { blogAjax } from '../axios/blog'
 
 import { defineComponent } from 'vue'
 export default defineComponent({
@@ -38,6 +55,20 @@ export default defineComponent({
   components: {
     Navbar,
     Feet,
+  },
+  data: () => {
+    return {
+      blogList: [],
+    }
+  },
+  created() {
+    this.getBlogList()
+  },
+  methods: {
+    async getBlogList() {
+      const response = await blogAjax.listBlog()
+      this.blogList = response.data ? response.data : []
+    },
   },
 })
 </script>
@@ -51,5 +82,4 @@ main.ant-layout-content
   background-color: var(--main-background)
   color: var(--main-color)
   padding: 50px
-
 </style>
