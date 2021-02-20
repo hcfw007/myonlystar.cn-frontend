@@ -74,12 +74,4 @@ export default defineComponent({
 </script>
 
 <style lang="stylus">
-header.ant-layout-header
-  background: var(--sub-background)
-  color: var(--sub-color)
-
-main.ant-layout-content
-  background-color: var(--main-background)
-  color: var(--main-color)
-  padding: 50px
 </style>
