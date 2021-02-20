@@ -28,10 +28,13 @@
       </a-row>
       <a-row>
         <a-col :span="24">
-          <a-list-item>
-            <a-list-item-meta>
+          <a-list-item
+            v-for="blog in blogList"
+            :key="blog._id"
+          >
+            <a-list-item-meta :description="new Date(blog.date).toDateString()">
               <template #title>
-                <a href="https://www.antdv.com/">test</a>
+                <a :href="`/blog/${ blog._id }`">{{ blog.title }}</a>
               </template>
             </a-list-item-meta>
           </a-list-item>
@@ -66,8 +69,8 @@ export default defineComponent({
   },
   methods: {
     async getBlogList() {
-      const response = await blogAjax.listBlog()
-      this.blogList = response.data ? response.data : []
+      const data = (await blogAjax.listBlog()).data.data
+      this.blogList = data || []
     },
   },
 })
