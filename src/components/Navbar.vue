@@ -4,7 +4,7 @@
       <a-row>
         <a-col :span="12">
           <div class="website-title-block">
-            <span class="website-title">MyOnlyStar.CN</span>
+            <span class="website-title"><a href="/">MyOnlyStar.CN</a></span>
             <span class="website-subtitle">一个普通的程序员</span>
           </div>
         </a-col>

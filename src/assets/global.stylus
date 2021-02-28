@@ -31,3 +31,6 @@ main.ant-layout-content
   background-color: var(--main-background)
   color: var(--main-color)
   padding: 50px
+
+a
+  color: inherit !important
