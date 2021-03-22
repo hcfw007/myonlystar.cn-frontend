@@ -10,7 +10,7 @@ export const router = createRouter({
     path: '/',
     component: Index,
   }, {
-    path: '/blog/:id',
+    path: '/pages/blog/:id',
     component: BlogDetail,
   }],
 })

@@ -34,7 +34,7 @@
           >
             <a-list-item-meta :description="new Date(blog.date).toDateString()">
               <template #title>
-                <a :href="`/blog/${ blog._id }`">{{ blog.title }}</a>
+                <a :href="`/pages/blog/${ blog._id }`">{{ blog.title }}</a>
               </template>
             </a-list-item-meta>
           </a-list-item>
