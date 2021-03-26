@@ -2,7 +2,7 @@ import Axios from 'axios'
 import { SERVICE_ENDPOINT, SERVICE_PATH, SERVICE_TIMEOUT } from '../../config/config'
 
 const instance = Axios.create({
-  baseURL: `${ SERVICE_ENDPOINT }${ SERVICE_PATH }`,
+  baseURL: `${ SERVICE_ENDPOINT }/${ SERVICE_PATH }`,
   timeout: SERVICE_TIMEOUT,
 })
 
