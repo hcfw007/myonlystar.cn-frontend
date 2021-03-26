@@ -1,6 +1,6 @@
 {
   "name": "myonlystar.cn-frontend",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Re: Build a personal website from zero",
   "scripts": {
     "dev": "vite",
