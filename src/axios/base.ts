@@ -7,7 +7,9 @@ const instance = Axios.create({
 })
 
 export const getRequestFactory = (url: string) => async(params?: any): Promise<any> => {
-  return instance.get(url, params)
+  return instance.get(url, {
+    params,
+  })
 }
 
 export const postRequestFactory = (url: string) => async(data?: any): Promise<any> => {

@@ -51,6 +51,7 @@ export default defineComponent({
     async getBlogDetail() {
       const id = this.$route.params.id
       const data = (await blogAjax.getBlogById({ id })).data.data
+      console.log(id, data)
       this.blogDetail = data || {}
     },
   },
